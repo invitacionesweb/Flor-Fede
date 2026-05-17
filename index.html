@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+
+   
+    <title>Flor & Fede</title>
+
+</head>
+<body>
+<!--
+        <header >
+        <nav>
+            <div class="logo">
+
+               
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section1">Detalles</a></li>
+                <li><a href="#section2">Información</a></li>
+                <li><a href="#section3">Redes</a></li>
+
+                <li><a href="#section4" class="rsvp-btn">RSVP</a></li>
+                <br>
+            </ul>
+        </nav>
+    </header>
+-->
+
+    <div class="background">
+        
+    </div>
+        <div class="audiodiv">
+            <audio id="myAudio" preload="auto">
+            <source src="./gala.mp3" type="audio/mpeg">
+            </audio>
+            <div id="playPauseBtn" class="play">
+                <img src="./img/notamusical.png" alt="Icono de música">
+            </div>
+        </div>
+
+    <p data-aos="fade-up" class="titulocontador">Faltan:</p>
+    <div class="contador">
+    
+        <div class="bloque">
+            <div data-aos="fade-up" id="dias" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">Días</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="horas" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">horas</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="minutos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">minutos</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="segundos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">segundos</div>
+        </div>
+    </div>
+
+
+<div class="datos-ubicacion">
+    <div>
+        <img data-aos="fade-down" src="./img-editable/icono1.png" alt="">
+    </div>
+  <div class="datos">
+      <div >
+        <h3>Civil</h3>
+        <p data-aos="fade-up">Octubre <br> Registro Civil de Temperley.</p>
+        <a data-aos="fade-up" class="boton" href="google.com/maps?sca_esv=c7bbab102485c47c&rlz=1C5BAPC_enAR1171AR1174&output=search&q=registro+civil+de+temperley&source=lnms&fbs=ADc_l-ZTp-1HXdaINP_OuItTO286Vs1ezdEjvdt8XczeEr8JoQkU0wxhV2Ad7aces_G8c0_sASTAmBd4ghLNCxf7dqkhNVj5nMkPAjYDQiqTjwZSnfAVbeBht8rMU024P2T0YwQmPtKspBRyxcyVZ0rhTIb2F4vaDS-PT6T8117E-i4GhXdXV890-uYX8U9OwzCDjp5PV-zEmFUU6XRWpSGmHYXJKE_86A&entry=mc&ved=1t:200715&ictx=111">CÓMO LLEGAR</a>
+    </div>
+    <br><br>
+    <div >
+         <h3>Fiesta</h3>
+        <p data-aos="fade-up">Sábado 12 de Diciembre <br> 18:00hs -  La Escapada Club de Campo.</p>
+        <a data-aos="fade-up" class="boton" href="https://www.google.com/maps/dir//67JQ%2B26M+La+Escapada+Club+de+campo,+B1786+Pontevedra,+Provincia+de+Buenos+Aires/@-34.7601794,-58.7240147,13.74z/data=!4m17!1m7!3m6!1s0x95bcc3438b0c48a3:0x4ab27098ece3e83b!2sLa+Escapada+Club+de+campo!8m2!3d-34.7709095!4d-58.710156!16s%2Fg%2F11nnpdr696!4m8!1m0!1m5!1m1!1s0x95bcc3438b0c48a3:0x4ab27098ece3e83b!2m2!1d-58.710156!2d-34.7709095!3e0?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">CÓMO LLEGAR</a>
+    </div>
+  </div>
+</div>
+
+<div class="novios">
+    <img src="./img-editable/fotos1.png" alt="">
+    <div class="icono2">
+      <img data-aos="fade-down" src="./img-editable/icono2.png" alt="">
+    </div>
+    <div class="icono3">
+      <img  data-aos="fade-up" src="./img-editable/icono3.png" alt="">
+    </div>
+</div>
+
+ <div class="timeline">
+         <p class="timeline-title">El gran día...</p>
+      <div class="iconos">
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/tulugar.png" alt="icono">
+                <p data-aos="fade-up" > 17:45 Hs <br> Toma tu lugar</p>
+               
+            </div>
+            <div   class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/anillos.png" alt="icono">
+                <p data-aos="fade-up" >18:00 Hs <br> Ceremonia</p>
+             
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/copas.png" alt="icono">
+                <p data-aos="fade-up">19:00 Hs <br> Recepción</p>
+               
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/cena.png" alt="icono">
+                <p data-aos="fade-up">20:00 Hs <br> Cena</p>
+               
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/fiesta.png" alt="icono">
+                <p data-aos="fade-up"  >22:00 Hs <br> Fiesta</p>
+              
+            </div>
+              <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/vueltaacasa.png" alt="icono">
+                <p data-aos="fade-up"  >02:00 Hs <br> Vuelta a casa</p>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="accordion">
+        <H3 data-aos="fade-up">Antes de que nos consultes...</H3>
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿CÓMO ME VISTO?</button>
+            <div class="accordion-content">
+                <p>QQueremos que te sientas cómodo/a y canchero/a, pero también que se note que es un día especial — el dress code es elegante.
+📸 Las fotos van a quedar para siempre, así que: prolijo/a y con onda, pero sin estrés.
+Recordá evitar el blanco (es de la novia), el verde y el chocolate. ¡Todo lo demás es tuyo! 🎨
+                </p> <br>
+            </div>
+        </div>
+
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿QUÉ LES REGALO?</button>
+            <div class="accordion-content">
+                <p>El mejor regalo es que estés con nosotros 💕
+                Pero si querés sumar un mimo a esta nueva etapa, podés ver nuestra mesa de regalos acá:
+
+                </p>
+                <div class="gift-block">
+                    <div class="gift-box">
+                        <div class="boton2" onclick="copyToClipboard('estoesunejemplo')">COPIAR CBU</div>
+                    </div>
+                    <br>
+                    <div class="gift-box">
+                        <div class="boton2" onclick="copyToClipboard('estoesunejemplo')">COPIAR ALIAS</div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                 <br>
+            </div>
+        </div>
+
+
+               <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿TIENEN INSTAGRAM DE LA BODA?</button>
+            <div class="accordion-content">
+                <p>Obvio! Y queremos que nos etiquetes en todas las fotos y videos para no perdernos de nada.💖
+                </p> 
+                <a data-aos="fade-up" class="boton2" href="https://www.google.com/maps/dir//67JQ%2B26M+La+Escapada+Club+de+campo,+B1786+Pontevedra,+Provincia+de+Buenos+Aires/@-34.7601794,-58.7240147,13.74z/data=!4m17!1m7!3m6!1s0x95bcc3438b0c48a3:0x4ab27098ece3e83b!2sLa+Escapada+Club+de+campo!8m2!3d-34.7709095!4d-58.710156!16s%2Fg%2F11nnpdr696!4m8!1m0!1m5!1m1!1s0x95bcc3438b0c48a3:0x4ab27098ece3e83b!2m2!1d-58.710156!2d-34.7709095!3e0?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">@boda.floryfede</a>
+                <br> <br> <br>
+            </div>
+        </div>
+      
+        
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿DÓNDE ESTACIONO?</button>
+            <div class="accordion-content">
+                <p>¡Sabemos que no querés andar dando vueltas!
+                    En el salón hay espacio para estacionar con comodidad.
+                </p> 
+
+            </div>
+        </div>
+        
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿QUÉ PASA SI TENGO MÁS DUDAS?</button>
+            <div class="accordion-content">
+                <p>Creemos que todas tus dudas estan resueltas pero si tenes mas consultas no dudes en escribirnos a nosotros hasta 48 hs antes del evento o a nuestros familares más cercanos dentro de las 48 hs previas. 
+                </p> 
+
+            </div>
+        </div>
+    <br>
+        <div class="icono4">
+        <img data-aos="fade-down" src="./img-editable/icono4.png" alt="">
+        </div>
+        <div class="icono5">
+        <img  data-aos="fade-up" src="./img-editable/icono5.png" alt="">
+        </div>
+    </div>
+
+
+     <div class="forms">
+        
+
+        <form name="asistenciaform" method="POST" action="https://script.google.com/macros/s/AKfycbwl2qC8Ky87UpNzr4fo-f0f9QD_sLuuAZbK_gW2f5hYTElwlbKGyxi4VSxjGTqz3w4/exec" class="formulario">
+
+            <label data-aos="fade-up" class="formtitle">Sólo faltas vos, Venis?</label>
+
+            <div class="radio-group">
+                <label class="radio-option">
+                <input type="radio" name="ASISTENCIA" value="sí" required />
+                <span>Sí</span>
+                </label>
+                <label class="radio-option">
+                <input type="radio" name="ASISTENCIA" value="no" />
+                <span>No</span>
+                </label>
+            </div>
+
+            <input type="text" name="NOMBRE" placeholder="Nombre" required />
+            <input type="text" name="APELLIDO" placeholder="Apellido" required />
+            <input type="text" name="DIETA" placeholder="Vegano / vegetariano / celíaco / nada"  />
+        
+            <textarea name="CANCION" placeholder="Recomendale una canción al DJ 🎶"></textarea> 
+
+
+            <button type="submit" class="boton">ENVIAR</button>
+        </form>
+
+        <p data-aos="fade-up">RECORDÁ COMPLETAR UN FORMULARIO POR PERSONA. <br> HACELO ANTES DEL 01 DE NOVIEMBRE.</p>
+    </div>
+
+
+    <div class="novios">
+        <img src="./img-editable/fotos2.png" alt="">
+    
+        
+        <div class="icono6">
+        <img  data-aos="fade-up" src="./img-editable/icono6.png" alt="">
+        </div>
+    </div>
+
+    
+
+    <div class="end">
+        <img data-aos="fade-up" src="./img-editable/manosanillos.png" alt="">
+        <h2 data-aos="fade-up" >Flor & Fede</h2>
+        <p data-aos="fade-down">Te esperamos</p>
+    </div>
+
+    <footer>
+        <div class="contenido">
+            <div>
+            <img src="./img/logosiquiero.png" alt="icono si quiero">
+                <p>Hecho con &hearts; <br>
+                &#169 <b>Si,quiero!</b> - invitaciones inteligentes.
+                <br> Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="contenido-list">
+                <ul>
+                    <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                    <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./countdwon.js"></script>
+<script src="./reproductor.js"></script>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("myAudio");
+
+    // Escucha el primer scroll
+    const playOnScroll = () => {
+      audio.play().catch(e => {
+        console.warn("El navegador bloqueó la reproducción automática", e);
+      });
+      document.removeEventListener("scroll", playOnScroll); // Se ejecuta solo una vez
+    };
+
+    document.addEventListener("scroll", playOnScroll);
+  });
+</script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+    <script>
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.parentElement;
+        item.classList.toggle("active");
+
+        // Cierra otros ítems si querés que solo se abra uno a la vez:
+        headers.forEach((otherHeader) => {
+          const otherItem = otherHeader.parentElement;
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+     
+</body>
+</html>

@@ -1,0 +1,814 @@
+:root {
+    --color-0:#ffffff;
+    --color-1:#bcc076;
+    --color-2:#f8f3ed;
+    --color-3:#333333;
+    --font-principal:'MiFuente';
+    --font-secundaria:'MiFuente2';
+}
+
+@font-face {
+  font-family: "MiFuente";
+  src: url("./WhisperMelodyLight-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuente2";
+  src: url("./BoulangerieCaps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: var(--color-0);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    overflow-x: unset;
+    overflow-x: hidden;
+
+}
+.boton {
+    border: 1px solid var(--color-1);
+    background-color: var(--color-1);
+    color: var(--color-0);
+    padding: 10px 30PX;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font-principal);
+    border-radius: 50px;
+
+}
+.boton:hover {
+    color: var(--color-1);
+    background-color: var(--color-0);
+    border: 1px solid var(--color-1);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton2 {
+    border: 1px solid var(--color-2);
+    background-color: var(--color-0);
+    color: var(--color-1);
+    padding: 10px 30PX;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font-secundaria);
+    border-radius: 50px;
+
+}
+.boton2:hover {
+    color: var(--color-0);
+    background-color: var(--color-1);
+    border: 1px solid var(--color-0);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* TODO AUIDO */
+.audiodiv {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce;
+    animation-duration:2s;
+    animation-iteration-count: unset;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.audiodiv img {
+    padding: 3px 0 0 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}
+.play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ocultar los controles nativos del audio */
+audio::-webkit-media-controls {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-panel {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-play-button {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-start-playback-button {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-enclosure {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display:none !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--color-1);
+    align-items: center;
+    font-family: var(--font-secundaria);
+}
+.logo {
+   
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+
+}
+.logo h1 {
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-3);
+    font-family: var(--font-secundaria);
+}
+
+.hamburger {
+    color:var(--color-2);
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--color-1);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color:var(--color-1);
+}
+
+.nav-links li {
+    display: inline;
+    background-color: var(--color-principal);
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-2);
+
+
+}
+
+.rsvp-btn {
+    background-color:var(--color-1);
+    color: var(--color-4) !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/*BACKGROUND*/
+
+.background { 
+    width: 100%;
+    height: 90vh;
+    background-image: url(./img-editable/BACKGROUND-TWO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*COUNTER*/
+
+
+.titulocontador {
+    color: var(--color-3);
+    font-family: var(--font-principal);
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.contador {
+    
+    display: flex;
+    color: var(--color-3);
+    justify-content: center;
+    padding: 30px 0;
+    margin: 0;
+  }
+
+.bloque {
+    text-align: center;
+    margin: 0 10px; /* Añadido espacio entre bloques para mejorar la apariencia */
+    }
+
+.numero {
+    font-size: 4.6em;
+    font-weight: 200;
+    font-family: var(--font-secundaria);
+    }
+
+.etiqueta {
+    font-size: 1.6em;
+    font-family: var(--font-principal);
+    }
+
+
+    /*DATOS UBICACIÓN*/
+
+    .datos-ubicacion {
+       
+        padding: 20PX 0 60PX 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: var(--color-0);
+        color:var(--color-3);
+        font-family: var(--font-secundaria);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .datos h3 {
+    color: var(--color-3);
+    font-family: var(--font-principal);
+    letter-spacing: 0.1rem;
+    font-size: 2.6em;
+    font-weight: lighter;
+    line-height: 1; /* espacio normal */
+    text-align: center;
+    margin: 20px 0 0 0;
+    }
+
+    .datos-ubicacion img {
+        width: 180px;
+    }
+
+    .datos-ubicacion .datos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+    }
+    .datos p{
+        font-size: 2.1rem;
+        padding: 0px 0 0 0;
+        margin: 0px 0px 30px 0;
+        max-width: 320px;
+    }
+
+/*FOTOS*/
+.novios {
+    width: 100%;
+    height: 60VH;
+    background-image: url(./img-editable/textura1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: auto;
+    display: flex;
+}
+.novios img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+   
+    
+}
+.icono2 {
+  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  top: -40px;
+  left: -40px;
+  z-index: 10; /* Asegura que esté encima */
+  padding: 5px;
+}
+.icono2 img {
+    width: 200px;
+}
+
+.icono3 {
+  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  bottom: -80px;
+  right: 0px;
+  z-index: 10; /* Asegura que esté encima */
+  padding: 0px;
+}
+.icono3 img {
+    width: 160px;
+}
+
+
+/*TIMELINE*/
+
+.timeline {
+    
+    margin: 0px 0 0 0;
+    padding: 16px 0;
+    width: 100vw;
+    height: auto;
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-3);
+    justify-content: center;
+   
+}
+.timeline .timeline-title {
+    font-size: 2.6rem;
+    line-height: 1;
+     font-family: var(--font-principal);
+    padding: 0;
+    margin: 20px 0;
+}
+.timeline img {
+    width: 330px;
+    padding: auto;
+    margin: auto;
+}
+.timeline .iconos {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.iconos-block img {
+    width: 100px;
+}
+.timeline 
+.iconos-block p {
+    padding: 0;
+    margin: 0;
+    max-width: 320px;
+    color: var(--color-3);
+    font-family: var(--font-secundaria);
+    font-size: 2.1rem;
+    line-height: 1;
+}
+
+
+
+
+/*FYQ*/
+
+.accordion {
+    position: relative;
+    padding: 40PX 0PX;
+    width: 100%;
+    margin: auto;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+    color: var(--color-2);
+  
+}
+.accordion H3 {
+    color: var(--color-2);
+    font-family: var(--font-principal);
+    letter-spacing: 0.1rem;
+    font-size: 2.6em;
+    font-weight: lighter;
+    line-height: 1; /* espacio normal */
+
+    text-align: center;
+}
+.accordion-item {
+    border: 1px solid var(--color-2);
+    margin: 4PX auto;
+    height: auto;
+    color: var(--color-2);
+    background-color: var(--color-1);
+    max-width: 80vw;
+    text-align: center;
+    font-family: var(--font-principal);
+    line-height: 1;
+}
+.accordion-item button {
+    margin: auto;
+    text-align: center;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+       height: auto;
+    font-size: 1.4rem;
+    border: 1PX SOLID var(--color-principal);
+    background-color:var(--color-secundario);
+    color: var(--color-principal);
+    font-family: var(--color-secundario);
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color:var(--color-principal);
+    color: var(--color-secundario);
+    
+}
+
+.accordion-content {
+    max-height: 0;
+    max-width: 700px;
+    height: auto;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 15px 0 ;
+    margin: 0;
+    height: auto;
+     font-size: 1.4rem;
+    color: var(--color-principal);
+    font-family: var(--font-secundaria);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 400px;
+    padding: 15px;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: var(--color-cuartro);
+}
+
+.icono4 {
+  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  top: -40px;
+  left: -40px;
+  z-index: 10; /* Asegura que esté encima */
+  padding: 5px;
+}
+.icono4 img {
+    width: 200px;
+}
+
+.icono5 {
+  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  bottom: -80px;
+  right: 0px;
+  z-index: 10; /* Asegura que esté encima */
+  padding: 0px;
+}
+.icono5 img {
+    width: 160px;
+}
+.icono6 {
+  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  bottom: -46px;
+  left: 0px;
+  z-index: 10; /* Asegura que esté encima */
+  padding: 0px;
+}
+.icono6 img {
+    width: 160px;
+}
+
+/*FORMS*/
+.forms {
+   
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background-image: url(./img-editable/textura3.png);
+   padding:96px 0 78px 0;
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+.forms p {
+    font-size: 0.9rem;
+    padding: 10px 0 20px 0;
+    margin: 0;
+    font-family: var(--font-principal);
+    color: var(--color-principal);
+}
+.information-bloque .botones {
+    width: 140px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+    gap: 10px;
+}
+.information-bloque .botones a {
+    width: 100px;
+}
+label .grupo-opciones {
+    font-family: var(--font-principal);
+    color: RED;
+}
+.formulario {
+    
+    max-width: 500px;
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formulario .formtitle {
+    font-family: var(--font-principal);
+    color: var(--color-principal);
+ font-size: 2.6rem;
+     padding: 0;
+    margin: 0;
+}
+
+.radio-group {
+  display: flex;
+   font-family: var(--font-principal);
+  align-items: center;
+  padding: 0 25%;
+  justify-content: start;
+  gap: 100px;
+  font-size: 1.2em;
+}
+
+.grupo-opciones{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap:0px;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-option {
+  display: flex;
+  width: 10px;
+  align-items: center;
+  font-family: var(--font-principal); /* Cambiá esto por el nombre real de tu fuente secundaria */
+  color: var(--color-principal); /* Este es tu color principal, definilo antes o reemplazalo por un valor hex como #A3A87B */
+  font-size: 1em;
+  gap: 6px;
+}
+
+.radio-option input[type="radio"] {
+  accent-color: var(--color-terciario); /* Cambia el color del círculo si el navegador lo soporta */
+}
+.etiqueta {
+   font-family: var(--font-principal);
+    padding: 0;
+    
+    margin: 0;
+}
+.formulario {
+    padding: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+  background-color: var(--color-0);
+  border: none;
+  
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #a3a49d;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: var(--gris-placeholder);
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.forms .boton {
+    font-size: 1.4rem;
+    margin: auto;
+    width: 90%;
+    font-family: var(--font-principal);
+}
+
+
+.end {
+    width: 100%;
+    height: auto;
+    color: var(--color-1);
+    text-align: center;
+    padding: 60px 0;
+
+}
+
+.end img {
+    width: 180px;
+    margin: auto;
+    padding: 0;
+}
+.end h2 {
+    font-family: var(--font-principal);
+    font-size: 3.2rem;
+    margin: auto;
+    max-width: 320px;
+    padding: 0;
+}
+.end p {
+    font-family: var(--font-secundaria);
+    font-size: 2.1rem;
+    margin: auto;
+    padding: 0;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-1);
+    color: var(--color-0);
+      font-family: var(--font-principal);
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer .contenido{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer img {
+    width: 60px;
+}
+footer p {
+      font-family: var(--font-principal);
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding:0 20px 20px 20px;
+    margin: 0;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-0);
+        color: var(--color-3);
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        width: 200px;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding: 0 0 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .logoflor {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 60px; /* Ajusta el tamaño a algo más pequeño para móviles */
+        left: -65px; /* Ajusta la posición para que no interfiera con la imagen de fondo */
+        top: 750px;
+        z-index: 3;
+       
+    }
+    .logoflor2 {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 100vw; /* Ajusta el tamaño a algo más pequeño para móviles */
+        top: 1360px;
+        overflow-x: hidden; /* También agregarlo a html */
+        transform: scaleX(-1);
+    }
+    .logoflor2 img {
+        margin-left: -90px;
+    }
+    
+
+    .background { 
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img-editable/BACKGROUND.ONE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+
+    .datos-ubicacion .datos {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+    .novios {
+        height: 50vh;
+    }
+
+
+    .timeline .iconos {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .timeline p {
+        font-size: 1.3rem;
+
+    }
+
+}
+    
+   
