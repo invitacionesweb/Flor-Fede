@@ -305,6 +305,7 @@ nav {
 }
 .novios img {
     width: 80%;
+    max-width: 500px;
     height: auto;
     margin: auto;
     padding: auto;
